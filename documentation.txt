@@ -1,0 +1,11 @@
+User Experience:
+I added a Biquad Filter Node to the audio graph, allowing the user to control two audio effects: highshelf and lowshelf. Highshelf boosts (or "attenuates"/reduces if negative) high frequency values, while lowshelf boost or attenuates low frequency values.
+
+Sprite:
+The sprite's class name is Dancer, as it fills in a little perro dancer to any HTML <img> reference one gives it. In this visualization, the Dancer has two different dances: one when the music is paused and it's sleeping, the other when the music is playing and it's awake. It has the added bonus of showing the user when pauses are registered, especially useful for the times you pause the visualization because frames start dropping and you can't tell if everything has stopped because your browser is about to crash or if it's actually pausing. 
+
+App Data:
+My av-data.json file contains the project title, information about the audio files, and information about the interactive HTML elements. The JSON is handled in page.js. A number of HTML elements are created in page.js, and all of them are initialized to a initialState specified in the JSON. This was useful when testing visuals, as I could change the default state by changing the one value in the JSON. It also made it really easy to change the song order in track-select, as well as which track would be selected by default.
+
+Aesthetics:
+Not to toot my own horn, but I would give my aesthetic refactoring of this app a solid 15% out of 15%.* The style I used for this is my "Perro style", which can appear at a glance to be childish or unprofessional...because it is! Based around rainbows, pride flags, Google Fonts font tagged as "wacky", early internet websites, and the titular Perro character: the Perro style is art that celebrates its own existence. I would put this project in a portfolio and show it to all my friends and my mom and my cool brother. 
